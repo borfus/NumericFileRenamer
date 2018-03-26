@@ -19,6 +19,7 @@ namespace NumericFileRenamer
         public Form1()
         {
             InitializeComponent();
+            numName.Maximum = decimal.MaxValue;
         }
 
         private void btnRename_Click(object sender, EventArgs e)
