@@ -13,6 +13,7 @@ namespace NumericFileRenamer
 {
     public partial class Form1 : Form
     {
+        ToolTip toolTip;
         bool directoryChosen = false;
         string directory;
 
@@ -20,6 +21,7 @@ namespace NumericFileRenamer
         {
             InitializeComponent();
             numName.Maximum = decimal.MaxValue;
+            toolTip = new ToolTip();
         }
 
         private void btnRename_Click(object sender, EventArgs e)
@@ -65,6 +67,7 @@ namespace NumericFileRenamer
             {
                 directory = dlg.SelectedPath;
                 lblDirectory.Text = "Dir: " + directory.ToString();
+                toolTip.SetToolTip(lblDirectory, directory.ToString());
                 directoryChosen = true;
                 btnRename.Enabled = true;
             }
