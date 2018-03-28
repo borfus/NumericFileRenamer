@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnRename = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDirectory = new System.Windows.Forms.Label();
             this.btnDirectory = new System.Windows.Forms.Button();
             this.numName = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numName)).BeginInit();
@@ -38,7 +38,7 @@
             // btnRename
             // 
             this.btnRename.Enabled = false;
-            this.btnRename.Location = new System.Drawing.Point(183, 29);
+            this.btnRename.Location = new System.Drawing.Point(198, 27);
             this.btnRename.Name = "btnRename";
             this.btnRename.Size = new System.Drawing.Size(76, 20);
             this.btnRename.TabIndex = 0;
@@ -46,20 +46,20 @@
             this.btnRename.UseVisualStyleBackColor = true;
             this.btnRename.Click += new System.EventHandler(this.btnRename_Click);
             // 
-            // label1
+            // lblDirectory
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Start Name:";
+            this.lblDirectory.AutoSize = true;
+            this.lblDirectory.Location = new System.Drawing.Point(12, 9);
+            this.lblDirectory.Name = "lblDirectory";
+            this.lblDirectory.Size = new System.Drawing.Size(23, 13);
+            this.lblDirectory.TabIndex = 2;
+            this.lblDirectory.Text = "Dir:";
             // 
             // btnDirectory
             // 
-            this.btnDirectory.Location = new System.Drawing.Point(142, 29);
+            this.btnDirectory.Location = new System.Drawing.Point(141, 27);
             this.btnDirectory.Name = "btnDirectory";
-            this.btnDirectory.Size = new System.Drawing.Size(35, 20);
+            this.btnDirectory.Size = new System.Drawing.Size(51, 20);
             this.btnDirectory.TabIndex = 3;
             this.btnDirectory.Text = "...";
             this.btnDirectory.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@
             // 
             // numName
             // 
-            this.numName.Location = new System.Drawing.Point(15, 29);
+            this.numName.Location = new System.Drawing.Point(15, 27);
             this.numName.Name = "numName";
             this.numName.Size = new System.Drawing.Size(120, 20);
             this.numName.TabIndex = 4;
@@ -81,10 +81,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 59);
+            this.ClientSize = new System.Drawing.Size(287, 58);
             this.Controls.Add(this.numName);
             this.Controls.Add(this.btnDirectory);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblDirectory);
             this.Controls.Add(this.btnRename);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -100,7 +100,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnRename;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDirectory;
         private System.Windows.Forms.Button btnDirectory;
         private System.Windows.Forms.NumericUpDown numName;
     }

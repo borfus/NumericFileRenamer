@@ -64,6 +64,7 @@ namespace NumericFileRenamer
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 directory = dlg.SelectedPath;
+                lblDirectory.Text = "Dir: " + directory.ToString();
                 directoryChosen = true;
                 btnRename.Enabled = true;
             }
