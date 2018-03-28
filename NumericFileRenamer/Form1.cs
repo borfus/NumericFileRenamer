@@ -66,7 +66,10 @@ namespace NumericFileRenamer
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 directory = dlg.SelectedPath;
-                lblDirectory.Text = "Dir: " + directory.ToString();
+                if (!truncateLabel())
+                {
+                    lblDirectory.Text = "Dir: " + directory.ToString();
+                }
                 toolTip.SetToolTip(lblDirectory, directory.ToString());
                 directoryChosen = true;
                 btnRename.Enabled = true;
@@ -75,6 +78,18 @@ namespace NumericFileRenamer
             {
                 // Prevents crash if no directory chosen.
             }
+        }
+
+        private bool truncateLabel()
+        {
+            string temp = "Dir: " + directory;
+            if (temp.Length > 42)
+            {
+                temp = temp.Substring(0, 39) + "...";
+                lblDirectory.Text = temp;
+                return true;
+            }
+            return false;
         }
     }
 }

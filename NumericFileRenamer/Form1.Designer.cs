@@ -38,7 +38,7 @@
             // btnRename
             // 
             this.btnRename.Enabled = false;
-            this.btnRename.Location = new System.Drawing.Point(198, 27);
+            this.btnRename.Location = new System.Drawing.Point(195, 26);
             this.btnRename.Name = "btnRename";
             this.btnRename.Size = new System.Drawing.Size(76, 20);
             this.btnRename.TabIndex = 0;
@@ -49,15 +49,16 @@
             // lblDirectory
             // 
             this.lblDirectory.AutoSize = true;
-            this.lblDirectory.Location = new System.Drawing.Point(12, 9);
+            this.lblDirectory.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDirectory.Location = new System.Drawing.Point(9, 8);
             this.lblDirectory.Name = "lblDirectory";
-            this.lblDirectory.Size = new System.Drawing.Size(23, 13);
+            this.lblDirectory.Size = new System.Drawing.Size(31, 13);
             this.lblDirectory.TabIndex = 2;
             this.lblDirectory.Text = "Dir:";
             // 
             // btnDirectory
             // 
-            this.btnDirectory.Location = new System.Drawing.Point(141, 27);
+            this.btnDirectory.Location = new System.Drawing.Point(138, 26);
             this.btnDirectory.Name = "btnDirectory";
             this.btnDirectory.Size = new System.Drawing.Size(51, 20);
             this.btnDirectory.TabIndex = 3;
@@ -67,7 +68,7 @@
             // 
             // numName
             // 
-            this.numName.Location = new System.Drawing.Point(15, 27);
+            this.numName.Location = new System.Drawing.Point(12, 26);
             this.numName.Name = "numName";
             this.numName.Size = new System.Drawing.Size(120, 20);
             this.numName.TabIndex = 4;
@@ -81,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 58);
+            this.ClientSize = new System.Drawing.Size(283, 58);
             this.Controls.Add(this.numName);
             this.Controls.Add(this.btnDirectory);
             this.Controls.Add(this.lblDirectory);
