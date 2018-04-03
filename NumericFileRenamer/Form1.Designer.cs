@@ -91,6 +91,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.Text = "Numeric File Renamer";
             ((System.ComponentModel.ISupportInitialize)(this.numName)).EndInit();
             this.ResumeLayout(false);
