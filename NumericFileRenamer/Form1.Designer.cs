@@ -62,7 +62,7 @@
             this.btnDirectory.Name = "btnDirectory";
             this.btnDirectory.Size = new System.Drawing.Size(51, 20);
             this.btnDirectory.TabIndex = 3;
-            this.btnDirectory.Text = "...";
+            this.btnDirectory.Text = "Dir";
             this.btnDirectory.UseVisualStyleBackColor = true;
             this.btnDirectory.Click += new System.EventHandler(this.btnDirectory_Click);
             // 
